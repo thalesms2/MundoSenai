@@ -1,0 +1,32 @@
+<?php
+	echo '		<header>';
+	echo '			<h1>Programador de Computador</h1>';
+	echo '			<br>';
+	echo '			<nav>';
+	echo '				<ul class="menu">';
+	echo '					<li><a href="index.php">Início</a></li>';
+	echo '					<li><a href="js.php">Javascript</a>';
+	echo '						<ul>';
+	echo '							<li><a href="alerta.php">Alerta</a></li>';
+	echo '							<li><a href="data_e_hora.php">Data e Hora</a></li>';
+	echo '							<li><a href="bhaskara_pitagoras.php">Bháskara e Pitágoras</a></li>';
+	echo '							<li><a href="sorteio.php">Sorteio</a></li>';
+	echo '							<li><a href="cronometro.php">Cronômetro</a></li>';
+	echo '							<li><a href="game/jogo.html">Jogo I</a></li>';
+	echo '						</ul>';
+	echo '					</li>';
+	echo '					<li><a href="php.php">PHP</a>';
+	echo '						<ul>';
+	echo '							<li><a href="./trabalhos/chat/chat.php">Chat</a></li>';
+	echo '							<li><a href="recibo.php">Recibo</a></li>';
+	echo '						</ul>';
+	echo '					</li>';
+	echo '					<li><a href="da.php">Desenho e Animação</a>';
+	echo '						<ul>';
+	echo '							<li><a href="tutoriais.php">Tutoriais GIMP</a></li>';
+	echo '						</ul>';
+	echo '					</li>';
+	echo '				<ul>';
+	echo '			</nav>';
+	echo '		</header>';
+?>

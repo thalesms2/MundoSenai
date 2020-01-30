@@ -1,0 +1,549 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Estudante Adventures</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	h4{
+	font-family:arial;
+	font-size:30px;
+	color: #000000;
+	text-align: center;
+	
+	}
+	
+   #GO {
+    font-family:arial;
+	font-size:30px;
+	text-align: center; 
+
+
+}   
+	
+	#nome {
+    padding:16px 31px;
+   text-decoration:none;
+    position :relative;   
+	font-size:20px;
+	font-family:arial;
+
+	}
+	h2 {
+	font-family:arial;
+	font-size:30px;
+	color: #FF0000;
+	text-align: center;
+	
+	}
+
+.myButton {
+    margin-top: -100px;
+	background-color:#44c767;
+	border-radius:5px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-align: center;
+	text-shadow:-2px 2px 6px #2f6627;
+	margin 0 auto;
+
+   
+}
+.myButton:hover {
+	
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	
+	top:1px;
+}
+.close-btn {
+    border: 2px solid #c2c2c2;
+    padding: 1px 5px;
+	position: relative;
+    top: -110px;
+    background-color: #605F61;
+    left: 520px;
+    border-radius: 20px;
+}
+.close-btn:hover {
+
+cursor:pointer;
+}
+
+.close-btn a {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+
+        .jogo {
+            border-collapse: collapse;
+            margin: 0 auto;
+		
+        }  
+        .botao {
+            margin: 0 auto;
+            text-align: center;
+            
+        }
+        th {
+            height : 100px;
+            width : 75px;
+            background-color: lightblue;
+            font-family: arial;
+            font-size: 100%;
+            
+        }
+		
+	
+		
+		#titulo{
+		text-align: center;
+                font-family: arial;
+                
+		
+		}
+		img {
+		height : 75px;
+            width : 75px;
+		}
+
+   
+        </style>
+		
+        <script>
+		function aa(){
+		document.getElementById('Game').style.display = "none";
+		}
+		function difi(){
+		document.getElementById('difi').style.display = "none";
+		}
+		
+		
+		
+	var confx = 0;	     
+    var x = 43; 
+    var y = 43;
+    var x1 = "";
+    var x2 = 0;
+	var dificuldade = "";
+    var cont = 0;
+    var documento = "13";
+    var documento2 = "13";
+    var documento3 = "13";
+    var documento4 = "13";
+    var doc1;
+    var doc2;
+    var doc3;
+    var doc4;
+    var comecar;
+	var cont2 = 0;
+    function ini(){
+         document.getElementById(x).innerHTML = "<img src=\"jogador.png\">";
+    }
+    
+    document.addEventListener('keydown', function(event) {
+   switch(event.keyCode){
+       case 39:
+           if(documento === x ){
+		   confx = 1;
+		   document.getElementById(x).innerHTML = "<img src=\"jogador.png\">";
+		   }
+        
+          
+           
+                y = x;
+                x = x+ 1;   
+                 if(x>45){
+                    x= 45;
+                } else{
+           
+           document.getElementById(x).innerHTML = "<img src=\"jogador.png\">";
+
+           document.getElementById(y).innerHTML = "";
+                }
+           break;
+           
+            case 37:
+         if(documento === x ){
+		   confx = 1;
+		     document.getElementById(x).innerHTML = "<img src=\"jogador.png\">";
+		   }
+               
+                y = x;
+                x = x - 1;      
+                if(x<41){
+                    x= 41;
+                } else {
+        
+            document.getElementById(x).innerHTML = "<img src=\"jogador.png\">";
+        
+                       document.getElementById(y).innerHTML = "";
+       }
+                break;
+       
+   }
+      
+                });      
+        function iniciar(){
+		document.getElementById("difi").style.display = "inline"
+        }        
+        function parar() {
+            clearInterval(comecar);
+			
+        }
+		tobi=4;
+		var izi;
+	function callEasy (){
+	    document.getElementById("difi").style.display ="none";
+		tobi -= 1;
+		izi = setTimeout(callEasy,1000);
+		
+		document.getElementById("t1").innerHTML = tobi;
+		if(tobi===0){
+		 easy();
+		 clearInterval(izi);
+		 document.getElementById("t1").innerHTML = "";
+                   tobi=4;
+		 }
+		}
+	function callMedium (){
+			    document.getElementById("difi").style.display ="none";
+
+		tobi -= 1;
+		izi = setTimeout(callMedium,1000);
+		
+		document.getElementById("t1").innerHTML = tobi;
+		if(tobi===0){
+		 medium();
+		 clearInterval(izi);
+		 document.getElementById("t1").innerHTML = "";
+                   tobi=4;
+		 }
+		}
+	function callHard (){
+			    document.getElementById("difi").style.display ="none";
+
+		tobi -= 1;
+		izi = setTimeout(callHard,1000);
+		
+		document.getElementById("t1").innerHTML = tobi;
+		if(tobi===0){
+		 hard();
+		 clearInterval(izi);
+		 document.getElementById("t1").innerHTML = "";
+                  tobi=4;
+		 }}
+		
+           function callExtreme (){
+		   	    document.getElementById("difi").style.display ="none";
+
+		tobi -= 1;
+		izi = setTimeout(callExtreme,1000);
+		
+		document.getElementById("t1").innerHTML = tobi;
+		if(tobi===0){
+		 Extreme();
+		 clearInterval(izi);
+		 document.getElementById("t1").innerHTML = "";
+                  tobi=4;
+		 }}
+                
+   function easy(){
+		clearInterval(comecar);
+		comecar = setInterval(jogar,700);
+		cont = 0;
+		dificuldade = "Easy";
+		}
+		
+		
+  function medium(){
+		clearInterval(comecar);
+		comecar = setInterval(jogar,500);
+		cont = 0;
+		dificuldade = "Medium";
+
+		}
+		
+  function hard(){
+		clearInterval(comecar);
+		comecar = setInterval(jogar,400);
+		cont = 0;
+		dificuldade = "Hard";
+		}
+		
+    function Extreme(){
+		clearInterval(comecar);
+		comecar = setInterval(jogar,300);
+		cont = 0;
+		dificuldade = "Extreme";
+		}
+		
+                
+		
+		
+		
+		var i = 0;
+function jogar(){
+        
+        
+     
+     cont+= 1;
+        
+          if(cont === 1){
+           x1 =  Math.floor(Math.random() * 5 ) + 1;        
+         documento = x1+10;
+         document.getElementById(documento).innerHTML = "<img src=\"livro.png\">" ;
+		
+		 
+     
+	 } else if (cont ===2){
+	 
+         document.getElementById(documento).innerHTML = "" ;
+         documento = documento + 10;
+        document.getElementById(documento).innerHTML = "<img src=\"livro.png\">" ;
+         x1 =  Math.floor(Math.random() * 5 ) + 1;
+         documento2 = x1+10;
+		 
+         document.getElementById(documento2).innerHTML = "<img src=\"livro.png\">" ;
+		
+    
+
+	} else if (cont === 3){
+	 
+         document.getElementById(documento).innerHTML = "" ;
+         documento = documento + 10;
+        document.getElementById(documento).innerHTML = "<img src=\"livro.png\">" ;
+         
+         document.getElementById(documento2).innerHTML = "" ;
+         documento2 = documento2 + 10;
+        document.getElementById(documento2).innerHTML = "<img src=\"livro.png\">" ;
+         
+          x1 =  Math.floor(Math.random() * 5 ) + 1;
+         documento3 = x1+10;
+          document.getElementById(documento3).innerHTML = "<img src=\"livro.png\">" ;
+		 
+        
+		
+		} else if(cont ===4 ){
+		
+         document.getElementById(documento).innerHTML = "" ;
+         documento = documento + 10;
+         document.getElementById(documento).innerHTML = "<img src=\"livro.png\">" ;
+         
+         document.getElementById(documento2).innerHTML = "" ;
+         documento2 = documento2 + 10;
+         document.getElementById(documento2).innerHTML = "<img src=\"livro.png\">" ;
+             
+         document.getElementById(documento3).innerHTML = "" ;
+         documento3 = documento3 + 10;
+         document.getElementById(documento3).innerHTML = "<img src=\"livro.png\">" ;
+         x1 =  Math.floor(Math.random() * 5 ) + 1;
+         documento4 = x1+10;
+         if(documento === x || confx===1 ){
+		                 document.getElementById("c1").innerHTML = "Score: "+(cont-3);
+
+             document.getElementById(documento4).innerHTML = "<img src=\"livro.png\">" ;
+			 document.getElementById(x).innerHTML = "<img src=\"jogador.png\">";
+                confx = 0;
+         }else {
+			
+             clearInterval(comecar);
+             documento = "13";
+			 tobi=4;
+			 var th =   document.getElementsByTagName("TH");
+		  for(i=0; i <= 20;i++){
+		   th[i].innerHTML = "";
+		  
+		  }
+              document.getElementById(x).innerHTML = "";  
+              document.getElementById(documento).innerHTML = "" ;
+              document.getElementById(documento2).innerHTML = "" ;
+              document.getElementById(documento3).innerHTML = "" ;
+              document.getElementById(documento4).innerHTML = "" ;            
+              document.getElementById(doc1).innerHTML = "" ;		 
+              document.getElementById(doc2).innerHTML = "" ;		 
+              document.getElementById(doc3).innerHTML = "" ;		 
+              document.getElementById(doc4).innerHTML = "" ;		 
+			
+			  
+		
+             
+            } 
+            
+           
+        } else if(cont >= 5) {
+		if(documento === x || confx === 1){	
+			doc1 = documento;
+			doc2 = documento2;
+			doc3 = documento3;
+			doc4 = documento4;        
+                       documento3 = documento4 +10;               
+                       documento2 = doc3 +10;               
+                       documento = doc2 +10;               
+                       documento4 = Math.floor(Math.random() * 5)+11;  
+                 
+   
+			 
+			   document.getElementById(doc1).innerHTML= "" ; 
+			   document.getElementById(doc2).innerHTML= "" ; 
+			   document.getElementById(doc3).innerHTML= "" ; 
+			   document.getElementById(doc4).innerHTML= "" ; 
+             
+			    document.getElementById(documento).innerHTML = "<img src=\"livro.png\">" ;
+			    document.getElementById(documento2).innerHTML = "<img src=\"livro.png\">" ;
+			    document.getElementById(documento3).innerHTML = "<img src=\"livro.png\">" ;			   
+                             document.getElementById(documento4).innerHTML = "<img src=\"livro.png\">" ;
+                           if(cont >=100){
+                                 document.getElementById(documento).innerHTML = "<img src=\"livro2.png\">" ;
+			         document.getElementById(documento2).innerHTML = "<img src=\"livro2.png\">" ;
+			         document.getElementById(documento3).innerHTML = "<img src=\"livro2.png\">" ;
+                                 document.getElementById(documento4).innerHTML = "<img src=\"livro2.png\">" ;
+                              
+                           }
+              document.getElementById(x).innerHTML = "<img src=\"jogador.png\">";
+              document.getElementById("c1").innerHTML = "Score: "+(cont-3);
+			  confx = 0;
+	
+	}else {
+            clearInterval(comecar);          
+		 document.getElementById("Game").style.display = "inline";
+		 document.getElementById("GO").innerHTML = "Você conseguiu "+(cont-4)+" no:  "+dificuldade;
+		 document.getElementById("pontos").value = (cont-4);
+		 document.getElementById("dif").value = dificuldade;
+		 
+		
+			tobi=4;
+		
+			 var th =   document.getElementsByTagName("TH");
+		  for(i=0; i <= 20;i++){
+		  th[i].innerHTML = "";
+		  
+		  }
+		  		   document.getElementById(x).innerHTML = "<img src=\"jogador.png\">";
+                	  
+ 			    
+                documento = "13";
+                documento2 = "13";
+                documento3 = "13";
+                documento4 = "13";
+				cont = 0;
+             
+			 document.getElementById(x).innerHTML = "<img src=\"jogador.png\">";
+                         
+			  
+			}
+			
+		}
+    }
+                
+            </script>
+    </head>
+	
+    <body onload="ini()">
+	<h1 id="titulo">Estudante Adventures</h1>
+        
+	<div id="Game" style=" display:none ; background-color:rgba(240,240,240,0.5);  width:40%;height:40%; left: 30%; top: 30%; position:absolute;">
+	
+	 <h2> Game Over </h2>
+	 <h3 id="GO"> </h3>
+	 <form action="submit.php" method="POST">
+     <span class="close-btn" onclick="aa()"><a >X</a></span>
+	 <input style="display: none;" type="text" id="pontos" name="pontos">
+	 <input style="display: none;" type="text" id="dif" name="dif">
+	 <input id="nome" name="user" type="text" placeholder="Nome" maxlength=10>
+     <input class="myButton" value="Submit" type="submit">		
+ 	
+	</form>
+	</div>
+	<div id="difi" style=" display:none ; background-color:rgba(240,240,240,0.5);  width:40%;height:40%; left: 30%; top: 30%; position:absolute;">
+	 <h2> Selecione uma Dificuldade</h2>
+	 <br><br>
+	 <center>
+     <input id="Easy" class="myButton" value="Easy" onclick="callEasy()" type="button">		
+     <input id="Medium" style="background-color: yellow;" class="myButton" value="Medium" onclick="callMedium()" type="button">		
+     <input id="Hard" style="background-color: red;"class="myButton" value="Hard" onclick="callHard()" type="button">		
+     <input id="Extreme" style="background-color: black;" class="myButton" value="Extreme" onclick="callExtreme()" type="button">		
+	 </center>
+ 	</div>
+	
+	<div id="score" style="  width: 30%; left: 70%; position:absolute;">
+	  <h4 id="t1"></h4>
+	  <h4 id="c1"></h4>
+	  <h4 id="b1"></h4>
+	</div>
+	
+	
+        <table class="jogo">
+            <tr id="1">           
+                <th id="11"></th>
+                <th id="12"></th>
+                <th id="13"></th>
+                <th id="14"></th>
+                <th id="15"></th>
+               
+             </tr>
+        
+             <tr id="2">           
+                <th id="21"></th>
+                <th id="22"></th>
+                <th id="23"></th>
+                <th id="24"></th>
+                <th id="25"></th>
+                
+             </tr>
+             
+              <tr id="3">           
+                <th id="31"></th>
+                <th id="32"></th>
+                <th id="33"></th>
+                <th id="34"></th>
+                <th id="35"></th>
+              
+                
+             </tr>
+             
+              <tr id="4">           
+                <th id="41"></th>
+                <th id="42"></th>
+                <th id="43"></th>
+                <th id="44"></th>
+                <th id="45"></th>
+             </tr>
+             
+        </table>
+        <br><br>
+    <center>
+	
+       <div id="botoes1">        
+	   
+	   <input type="button" class="myButton" value="Iniciar" onclick="iniciar()">
+         <a href="placares.php" class="myButton" style="background-color:#ebab3a;  ">Top Scores</a>
+		</div>
+		<br>
+		<div id="botoes2">
+		
+		
+		</div>
+		
+
+        
+    </center>
+    
+
+</body>
+</html>

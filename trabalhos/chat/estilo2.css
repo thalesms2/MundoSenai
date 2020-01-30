@@ -1,0 +1,549 @@
+@import url(http://fonts.googleapis.com/css?family=Alef);
+
+
+
+	@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+
+body{
+	font-family: 'Josefin Sans', sans-serif;
+	margin: 0;
+	background-color: white; 
+}
+header{
+	background-color: #007744;
+	width: 100%;
+	height: 20%;
+}
+section{
+	width: 80%;
+	height: 60%;
+	background-color: whitesmoke;
+	margin: 20 auto;
+	box-shadow: 0px 0px 15px #007744;
+}
+#sectionChat{
+	width: 80%;
+	height: 115%;
+	background-color: whitesmoke;
+	margin: 20 auto;
+	box-shadow: 0px 0px 15px #007744;
+}
+footer{
+	background-color: #007744;
+	width: 100%;
+	height: 10%;
+	color: whitesmoke;
+	text-align: center;
+	font-size: 120%;
+}
+h1{
+	font-family: arial;
+	color: whitesmoke;
+	text-align: center;
+	font-size: 200%;
+}
+
+.menu{
+	color: white;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	background-color: whitesmoke;
+	border-radius: 5px;
+}
+*{
+	margin: 0; padding: 0;
+}
+body{
+	font-size: 140%;
+}
+.menu{
+	list-style:none;
+	border:1px solid #007744;
+	float:left;
+}
+.menu li{
+	position:relative;
+	float:left;
+	width: 25%;
+}
+.menu li a{
+	color:#007744; 
+	text-decoration:none; 
+	padding:5px 10px; 
+	display:block;
+}
+ 
+.menu li a:hover{
+	background-color:c0c0c0;
+	color:007744;
+}
+.menu li  ul{
+	position:absolute;
+	left:0;
+	background-color: white;
+	display:none;
+}  
+.menu li:hover ul, .menu li.over ul{
+	display:block;
+}
+.menu li ul li{
+	border:1px solid #007744;
+	display:block;
+	width:100%;
+	color:#007744;
+}
+.menu li ul li:hover{
+	background-color:c0c0c0;
+}
+.descricao{
+	width: 80%;
+	height: auto;
+	color: #007744;
+	padding: 5px;
+	font-size: 120%;
+	text-align: center;
+	border: 1px dashed #007744;
+	margin: auto;
+	top: 5%;
+}
+.objetivo{
+	width: 80%;
+	height: auto;
+	color: black;
+	padding: 5px;
+	font-size: 100%;
+	margin: auto;
+	top: 5%;
+}
+p{
+	font-size: 65%;
+	text-align: center;
+}
+h2{
+	text-align: center;
+	color: #007744;
+	font-size: 130%;
+}
+
+
+		
+		#inputUser{
+			width: 60%;
+			height: 25px;
+			color:#34495e;
+			text-align: center;
+			background: #ecf0f1;
+			border: 0;
+			border-bottom: 2px solid #dadedf;
+			cursor: text;
+			box-shadow: inset 0 -2px #dadedf;
+			font-family: Alef;
+		}
+
+		#inputSenha{
+			width: 56%;
+			height: 25px;
+			color:#454545;
+			text-align: center;
+			background: #ecf0f1;
+			border: 0;
+			border-bottom: 2px solid #dadedf;
+			cursor: text;
+			box-shadow: inset 0 -2px #dadedf;
+			font-family: Alef;
+		}
+
+		#botaoLogin{
+			width: 20%;
+			font-size: 90%;
+			font-weight: bolder;
+			color: white;
+			text-align: center;
+			background: #007744;
+			cursor: pointer;
+			border: 2px solid #ecf0f1;
+			font-family: Alef;
+			margin-top: 3%;
+			margin-bottom: 2%;
+		}
+
+		#botaoLogin:active {
+			background-color: rgba(26, 188, 156,0.9);
+			color: gray;
+			font-family: Alef;
+		}
+
+		
+		#inputCadUser{
+			margin-top: 3%;
+			width: 77%;
+			height: 25px;
+			color:#34495e;
+			text-align: center;
+			background: #ecf0f1;
+			border: 0;
+			border-bottom: 2px solid #dadedf;
+			cursor: text;
+			box-shadow: inset 0 -2px #dadedf;
+			font-family: Alef;
+		}
+	
+		#inputSenhaUser{
+			width: 67%;
+			height: 25px;
+			color:#34495e;
+			text-align: center;
+			background: #ecf0f1;
+			border: 0;
+			border-bottom: 2px solid #dadedf;
+			cursor: text;
+			box-shadow: inset 0 -2px #dadedf;
+			font-family: Alef;
+		}
+		
+		#inputConfSenha{
+			width: 45%;
+			height: 25px;
+			color:#34495e;
+			text-align: center;
+			background: #ecf0f1;
+			border: 0;
+			border-bottom: 2px solid #dadedf;
+			cursor: text;
+			box-shadow: inset 0 -2px #dadedf;
+			font-family: Alef;
+		}
+		
+		#inputCor{
+			right: 23%;
+			width: 10%;
+			height: 20px;
+			color:#34495e;
+			text-align: center;
+			background: #ecf0f1;
+			border: 0;
+			border-bottom: 2px solid #dadedf;
+			cursor: pointer;
+			box-shadow: inset 0 -2px #dadedf;
+			font-family: Alef;
+		}
+		
+		#botaoCadUser{
+			width: 25%;
+			font-size: 90%;
+			font-weight: bolder;
+			text-shadow: 1px 1px 1px black;
+			color: white;
+			text-align: center;
+			margin-left: 35%;
+			margin-top: 5%;
+			background: #007744;
+			border-bottom: 2px solid #1abc9c;
+			cursor: pointer;
+			border: 2px solid #007744;
+			font-family: Alef;
+		}
+		
+		#botaoCadUser:active{
+			background-color: rgba(26, 188, 156,0.9);
+			color: gray;
+			font-family: Alef;
+			border: 2px solid rgba(26, 188, 156,0.9);
+		}
+
+	
+	
+		#botaoVoltar{
+			margin-top: 1%;
+			width: 20%;
+			margin-left: 20%;
+			font-size: 90%;
+			font-weight: bolder;
+			text-shadow: 1px 1px 1px black;
+			color: white;
+			text-align: center;
+			background: #007744;
+			border-bottom: 2px solid #1abc9c;
+			cursor: pointer;
+			border: 2px solid #007744;
+			font-family: Alef;
+		}
+		
+		#botaoVoltar:active{
+			background-color: rgba(26, 188, 156,0.9);
+			color: gray;
+			font-family: Alef;
+			border: 2px solid rgba(26, 188, 156,0.9)
+		}
+		
+		#botaoVoltar2{
+			margin-top: 1%;
+			width: 20%;
+			margin-left: 40%;
+			font-size: 90%;
+			font-weight: bolder;
+			text-shadow: 1px 1px 1px black;
+			color: white;
+			text-align: center;
+			background: #007744;
+			border-bottom: 2px solid #1abc9c;
+			cursor: pointer;
+			border: 2px solid #007744;
+			font-family: Alef;
+		}
+		
+		#botaoVoltar2:active{
+			background-color: rgba(26, 188, 156,0.9);
+			color: gray;
+			font-family: Alef;
+			border: 2px solid rgba(26, 188, 156,0.9)
+		}
+		
+		
+		#msg{
+			width: 35%;
+			height: 25px;
+			color:#34495e;
+			text-align: center;
+			background: #bdc3c7;
+			border: 0;
+			cursor: text;
+			box-shadow: inset 0 -2px #95a5a6;
+			height: 30px;
+			margin-top: 2%;
+			font-family: Alef;
+		}
+		
+		#botaoChat{
+			width: 20%;
+			font-size: 90%;
+			font-weight: bolder;
+			text-shadow: 1px 1px 1px black;
+			color: white;
+			text-align: center;
+			background: #007744;
+			border-bottom: 2px solid #1abc9c;
+			cursor: pointer;
+			border: 2px solid #007744;
+			font-family: Alef;
+		}
+		
+		#botaoChat:active{
+			background-color: rgba(26, 188, 156,0.9);
+			color: gray;
+			font-family: Alef;
+			border: 2px solid rgba(26, 188, 156,0.9);
+		}
+
+		#labelCorCadUser{
+			right: 24%;
+			font-family: Alef;
+		}
+	
+
+	
+		.labelNomeChat{
+			font-size: 120%;
+			font-weight: bolder;
+			color: #34495e;
+			text-align: center;
+			cursor: text;
+			margin-top: 1%;
+			font-family: Alef;
+		}
+	
+
+		#divLoginTudo{
+			margin: 0px auto;
+			margin-top: 3%;
+			height: 40%;
+			width: 40%;
+			background-color: #ecf0f1;
+			padding-top: 1%;
+			font-family: Alef;
+			text-align: center;
+			
+		}
+		#divFormCadUser{
+			margin: 0px auto;
+			margin-top: 1%;
+			height: 40%;
+			width: 45%;
+			background-color: #ecf0f1;
+			padding-top: 1%;
+			font-family: Alef;
+			padding-left: 4%;
+		}
+			
+	
+
+		#divCadastroSucesso{
+			margin: 0px auto;
+			margin-top: 1%;
+			height: 20%;
+			width: 50%;
+			padding-top: 1%;
+			font-family: Alef;
+		}
+		
+		#divJaUso{
+			margin: 0px auto;
+			margin-top: 1%;
+			height: 20%;
+			width: 50%;
+			padding-top: 8%;
+			font-family: Alef;
+		}
+		
+		#divSenhaDesiguais{
+			margin: 0px auto;
+			margin-top: 1%;
+			height: 5%;
+			width: 40%;
+			padding-top: 10%;
+			padding-left: 20%;
+			font-family: Alef;
+		}
+
+
+		#mensagens{
+			width:45%;
+			background-color: #ecf0f1;
+			height:86%;
+			margin-left: 28%;
+			padding-top: 1%; 
+			margin-top: 2%;
+			font-family: Alef;
+			text-align: center;
+		}
+		
+		#mensagens2{
+			margin-top:1%;
+			width:80%;
+			background-color: #bdc3c7;
+			overflow:auto;
+			height:350px;
+			margin-left: 10%;
+			margin-bottom:6%;
+			font-family: Alef;
+		}
+		
+		#divNomeChat{
+			margin-top: 1%;
+			font-family: Alef;
+		}
+		#aCadastro{
+			color:#34495e;
+			text-decoration: none;
+			font-family: Alef;
+		}
+		
+		#aCadastro:active{
+			color:#007744;
+			text-decoration: none;
+			font-family: Alef;
+		}
+		
+		a {
+			text-decoration: none;
+			font-family: Alef;
+		}
+		
+	
+	
+		#aCliqueChat{
+			color:#c0392b;
+			margin-top:20px;
+			margin-bottom:20px;
+			text-decoration: none;
+			font-family: Alef;
+		}
+		
+		#acliqueChat:active{
+			color:rgba(26, 188, 156,0.9);
+			margin-top:20px;
+			margin-bottom:20px;
+			text-decoration: none;
+			font-family: Alef;
+		}
+		
+
+
+	#pN{
+		text-align:center;
+		color:#c0392b;
+		font-family: Alef;
+		top: 21%;
+		position: relative;
+	}
+
+
+		
+		#hTituloLogin{
+			color:#34495e;
+			font-family: Alef;
+		}
+		
+		#hTituloLoginGrande{
+			color:#34495e;
+			font-family: Alef;
+			text-align: center;
+			padding-top: 1.5%;
+		}
+		
+		#hCadastro{
+			color:#34495e;
+			margin-top:12%;
+			font-family: Alef;
+		}
+
+		#hCadastroSucesso{
+			color:#34495e;
+			margin-top:1%;
+			padding-top: 10%;
+			font-family: Alef;
+			text-align: center;
+		}
+		
+		#hCadastroCriarUser{
+			color:#34495e;
+			margin-top:15%;
+			font-family: Alef;
+		}
+		
+		#hUserJaCadastrado{
+			color:#34495e;
+			margin-top:1%;
+			font-family: Alef;
+		}
+
+		#hSenhasDiferentes{
+			color:#e74c3c;
+			margin-top:1%;
+			font-family: Alef;
+		}
+		
+		#hCadastroCadUser{
+			color:#34495e;
+			padding-top: 5%;
+			font-family: Alef;
+			text-align:center;
+		}
+		
+	
+	
+		#hTituloChat{
+			color:#34495e;
+			margin-top:2%;
+			padding: 0.5%;
+			font-family: Alef;
+		}
+		
+		#hEmoticons{
+			color:#34495e;
+			font-size: 120%;
+			margin-bottom: 1%;
+			font-family: Alef;
+		}
+	
