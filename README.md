@@ -19,3 +19,37 @@ Para instalar o Mundo Senai Portal, siga estas etapas:
 
 Clone o repositório;
 Copie os arquivos para o servidor apache de sua preferencia;
+
+## 🤝 Colaboradores
+
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
+<ul>
+  <li>Ana Paula</li>
+  <li>Andreas</li>
+  <li>Arthur</li>
+  <li>Emerson</li>
+  <li>Felipe Locatelli</li>
+  <li>Heber</li>
+  <li>Henrico</li>
+  <li>Ianael</li>
+  <li>Jean</li>
+  <li>João Felipe</li>
+  <li>João Rosário</li>
+  <li>Junior</li>
+  <li>Lais</li>
+  <li>Leonardo Heckert</li>
+  <li>Lissandra</li>
+  <li>Lucas Ferrari</li>
+  <li>Lucas Pereira</li>
+  <li>Maria</li>
+  <li>Marley</li>
+  <li>Matheus Frutuoso</li>
+  <li>Mateus Jorge</li>
+  <li>Nathan</li>
+  <li>Patricia</li>
+  <li>Rebecca</li>
+  <li>Romulo</li>
+  <li>Ronaldo</li>
+  <li>Thales</li>
+  <li>Willian</li>
+</ul>
