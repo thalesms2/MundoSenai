@@ -2,7 +2,7 @@
 
 <img src="./imgs/exemplo.png" alt="exemplo imagem">
 
-> Projeto realizado para o evento Mundo Senai, pela turma de Aprendizagem Industrial de Programador de Computador no SENAI/SC Brusque de 2015 na qual eu participei.
+> Projeto realizado para o evento Mundo Senai, pela turma de Aprendizagem Industrial de Programador de Computador no SENAI/SC Brusque de 2014 na qual eu participei.
 ## 📫 Acesse o portal:
 
 https://thalesms2-mundo-senai.herokuapp.com/
