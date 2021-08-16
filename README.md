@@ -24,6 +24,8 @@ Copie os arquivos para o servidor apache de sua preferencia;
 
 Agradecemos às seguintes pessoas que contribuíram para este projeto:
 <ul>
+  <li>Professor Lucas</li>
+  <li>Professor Tarcisio</li>
   <li>Ana Paula</li>
   <li>Andreas</li>
   <li>Arthur</li>
