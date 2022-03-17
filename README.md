@@ -7,12 +7,6 @@
 
 https://thalesms2-mundo-senai.herokuapp.com/
 
-## 💻 Pré-requisitos
-
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-* Você instalou a versão mais recente do Apache e PHP.
-* Você tem uma máquina Windows / Linux / Mac.
-
 ## 🚀 Instalando Mundo Senai Portal
 
 Para instalar o Mundo Senai Portal, siga estas etapas:
